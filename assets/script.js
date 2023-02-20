@@ -7,39 +7,31 @@
 const quizData = [ 
 {
     question: "What does CSS stand for?",
-    a: "Car Styling Straps",
-    b: "Cascading Single Sheets",
-    c: "Cascading Style Sheets",
-    d: "Cats Standing Still",
-    correct: "c",
+    answers: ['Collecting Silly Stamps', 'Cascading Style Sheets', 'Cascading Single Sheet', 'Cats Standing Still'],
+    correctAnswer: 'Cascading Style Sheets',
+   
+ 
 },
 
 {
     question: "What does HTML stand for?",
-    a: "Humans Talk Much Longer",
-    b: "Hypertext Markup language",
-    c: "How To Make Lasagna",
-    d: "Hypertext Mixup Language",
-    correct: "b",
+    answers: ['Humans Take Much Longer', 'Hypertext Mixup Language', 'How to Make Lasagna', 'Hypertext Markup Language'],
+    correctAnswer: 'Hypertext Markup Language',
 
 },
 
 {
     question: "True of False? Java and Javascript mean the same thing?",
-    a: "True",
-    b: "False",  
-    correct: "b",
+    answers: ['True', 'False'],  
+    correctAnswer: "False",
 },
 
 {
-    question: "What are values that evaluate to true or False?",
-    a: "String",
-    b: "Null",
-    c: "Undefined",
-    d: "Boolean",
-    correct: "d",
+    question: "What is the value that evaluates to true or False?",
+    answers: ['String', 'Null', 'Undefined', 'Boolean'],
+    correctAnswer: "Boolean",
 
-}
+},
 ];
 let currentQuiz = 0;
 let score = 0;
@@ -48,8 +40,8 @@ let maxTime = 40;
 function startTimer(){
     document.getElementById('timer').innerHTML = 'timer: ' + maxTime;
     
-    if 
 }
+
 
 
 

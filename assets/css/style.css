@@ -1,14 +1,22 @@
-
-
-
-
-
-
 body {
     background-color: white;
     font-family: sans-serif;
     display: flex;
     
+}
+
+
+
+.quiz-header {
+    background-color: beige;
+    align-items: center;
+
+    }
+
+
+h1 {
+
+
 }
 
 .quiz-container {
@@ -22,13 +30,35 @@ body {
     margin: 0%;
 }
 
-.quiz-header {
+
+
+.quiz-content {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
 
 }
 
-.question-card {
+.quiz-question {
+
 
 }
+
+.quiz-answer {
+
+    
+}
+
+
+
+
+
+
+
+
 
  
  
