@@ -1,56 +1,27 @@
-body {
-    background-color: white;
-    font-family: sans-serif;
-    display: flex;
+* {
     
-}
+    padding: 0;
+    }
 
-
-
-.quiz-header {
-    background-color: beige;
-    align-items: center;
+body {
+    font-family: sans-serif;
 
     }
 
-
-h1 {
-
+#begin {
+    display: none;
 
 }
 
-.quiz-container {
-    background-color: white;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0%;
+#end {
+    display: none;
+
 }
 
 
 
-.quiz-content {
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
 
 
-}
-
-.quiz-question {
-
-
-}
-
-.quiz-answer {
-
-    
-}
 
 
 

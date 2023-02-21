@@ -4,28 +4,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel ='stylesheet' href = './assets/css/style.css'/>
+
+  <link rel='stylesheet' type="text/css" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Coding Quiz</title>
 </head>
 <body>
-      <h1>Coding Quiz</h1>
-    
-    
-      <button onclick="startTimer()">Start Quiz</button>
-    </div>
-    <div class="quiz-container" id= "quiz">
-      <section class="quiz-header">
-        <h3 id="score"> score: 0</h3> 
-        <h3 id="timer"> timer: 0</h3>
+      
+    <header>
+      <nav class="d-flex justify-content-between">
+        <div class="highscores">
+          <div>View Highscores</div>
+          <div id="highscores"></div>
+        </div>
+        <div id="timer" class="timer">
+          Time Left: 60
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="intro" class="intro">
+        <h1>Coding Quiz</h1>
+        <p>Lets begin with the quiz! Good luck</p>
+        <button id ="start">Start Quiz</button>
+      </section>
+
+      <section id="begin">
+        <div class ="begin">
+          <div id ="question"></div>
+          <div id ="choices"></div>
+          <div id ="answer"></div>
+        </div>
+      </section>
+
+      <section id="end">
+        <div class="end">
+          <div>Complete</div>
+          <div id ="score">Your Score: </div>
+          <input type="text" placeholder="inter your initials" id="initials"></input>
+          <div id ="answer">
+            <button id="submit">Submit</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <div class="quiz-container">
+      <section class="top-bar">
+        <button>View Highscores</button>
+        <p>Timer: 0</p>
+        
 
       </section>
       <div class ="quiz-content">
-      
-        <section class="quiz-question">
-          <h2 id="question"> Question Text</h2>
-          
+        <section class ="quiz-header">
+          <h1>Coding Quiz</h1>
+          <p>Lets begin with the Quiz! Good luck!
+          </p>
+          <button>Start Quiz</button>
 
         </section>
+      
+        <section class="quiz-question">
+           </section>
         <section class="quiz-answer">
         </section>
       </div>
@@ -44,7 +84,7 @@
   
   
 
-  </div>
+  </div> -->
 <script src="assets/script.js"></script>
 </body>
 </html>
