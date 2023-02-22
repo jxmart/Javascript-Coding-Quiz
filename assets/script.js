@@ -14,8 +14,10 @@ let score = document.querySelector('#score')
 let initials = document.querySelector('#initials')
 let end = document.querySelector('#end')
 let begin = document.querySelector('#begin')
+let submit =document.querySelector('#submit')
 
-
+let list = localStorage.getItem('val')
+highScores.append(list)
 
 let secondsLeft = 60
 let qindex = 0
@@ -111,9 +113,16 @@ function endGame (){
     score.append(userScore)
 }
     
+submit.addEventListener('click', function(event){
+    event.target.disabled = true
+    saveScore()
+})
 
-
-
+function saveScore(){
+    let name = document.querySelector('input').value
+    localStorage.setItem('val', name + ` ` + userScore)
+    location.reload()
+}
 
 
 

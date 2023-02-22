@@ -1,21 +1,37 @@
 * {
-    
     padding: 0;
-    }
+}
 
 body {
     font-family: sans-serif;
+}
+header {
+    background-color: black;
+    color: white;
+}
 
-    }
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 90vh;
+    flex-direction: column;
+} 
+.begin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 90vh; 
+}
 
 #begin {
     display: none;
-
 }
 
 #end {
     display: none;
-
 }
 
 
